@@ -1,21 +1,22 @@
 import type { FC } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
 import './styles/globals.css'
 
 const App: FC = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <header className="py-6 px-4">
-        <h1 className="text-2xl font-bold text-center">
-          Juan Sebastián Gómez Ayala
-        </h1>
-        <p className="text-center text-gray-600 dark:text-gray-400">
-          Web UI Developer
-        </p>
-      </header>
-      <main className="container mx-auto px-4">
-        {/* Main content will be rendered here */}
-      </main>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   )
 }
 
