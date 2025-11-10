@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 🌐 Professional Portfolio — Juan Sebastian Gómez Ayala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Professional Web Portfolio**, a project built to showcase my experience, skills, and selected projects as a **Web UI Developer**, emphasizing clean architecture, SOLID principles, and a human-centered approach to frontend development.
 
-Currently, two official plugins are available:
+This website is built with **React + TypeScript + Vite + TailwindCSS** and deployed via **GitHub Pages**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Purpose
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+This portfolio aims to:
+1. Present my **professional and technical profile** through a clean and responsive interface.  
+2. Demonstrate my **focus on code quality, scalability, and collaboration**.  
+3. Serve as a **practical example** of clean, maintainable, and reusable component architecture in React.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧩 Main Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Section | Description |
+|----------|-------------|
+| 🏠 **Home** | Short introduction: photo, country, role, and professional summary. |
+| 💼 **Projects** | My most relevant projects, with storytelling and technical details. |
+| 🎓 **Education & Certifications** | Academic background and technical training. |
+| 📬 **Contact** | Links to LinkedIn, GitHub, Notion, and email. |
+| 🌍 **Language** | Fully bilingual site (**English / Spanish**) with instant toggle. |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Framework:** React 18  
+- **Language:** TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** TailwindCSS  
+- **Routing:** React Router DOM  
+- **i18n:** react-i18next  
+- **Testing:** Jest + Testing Library  
+- **Linting:** ESLint + Prettier  
+- **Deployment:** GitHub Pages  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧠 Project Storytelling
+
+Each project is written as a **short, meaningful case study**, structured as:
+
+1. **Role & Team** — What was my role and collaboration context.  
+2. **Problem** — The challenge faced or goal pursued.  
+3. **Solution** — The approach, tools, and implementation.  
+4. **Impact** — The measurable or qualitative result.  
+5. **Key Learnings** — What I learned from the process.  
+
+---
+
+## 🧱 Folder Structure
+
+src/
+├── assets/ # Images and icons
+├── components/ # Reusable UI components
+├── data/ # JSON data for projects, education, etc.
+├── i18n/ # Translation setup
+├── hooks/ # Custom React hooks
+├── pages/ # Main views (Home, Projects, etc.)
+├── styles/ # Tailwind or global styles
+└── main.tsx
+
+
+---
+
+## 🌍 Deployment
+
+This project is deployed to GitHub Pages.
+
+npm run build
+npm run deploy
