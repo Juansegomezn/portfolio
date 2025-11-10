@@ -1,0 +1,29 @@
+{
+  "common": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Language",
+    "copyright": "© 2025 Juan Sebastián Gómez Ayala. All rights reserved."
+  },
+  "home": {
+    "title": "Welcome",
+    "description": "Web UI Developer with expertise in React, TypeScript, and modern frontend development.",
+    "subtitle": "Web UI Developer",
+    "cta": "View My Work"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Explore my recent projects and technical implementations.",
+    "viewProject": "View Project",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Let's connect and discuss your next project.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "send": "Send Message"
+  }
+}
