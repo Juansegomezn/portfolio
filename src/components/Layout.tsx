@@ -17,7 +17,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
             <LanguageSwitcher />
           </div>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-6">
-            {t('common.web_ui_developer', 'Web UI Developer')}
+            {t('home.subtitle')}
           </p>
           <nav className="flex justify-center space-x-6">
             <Link 
