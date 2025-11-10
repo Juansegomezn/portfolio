@@ -4,7 +4,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-import './styles/globals.css'
+import './index.css'
 
 const App: FC = () => {
   return (
