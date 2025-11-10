@@ -1,5 +1,6 @@
 import type { FC } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Button } from '../components'
 
 const Home: FC = () => {
   const { t } = useTranslation()
@@ -13,9 +14,9 @@ const Home: FC = () => {
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
           {t('home.description')}
         </p>
-        <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium">
+        <Button variant="primary" size="lg">
           {t('home.cta')}
-        </button>
+        </Button>
       </div>
     </section>
   )
