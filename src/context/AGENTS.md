@@ -88,6 +88,56 @@ CONTEXT.md → Author’s personal data for portfolio
 
 ---
 
+## 🧭 Git & Version Control Guidelines
+
+1. **Branch Strategy**
+   - Use feature branches for all new work:  
+     `feature/<short-description>`  
+     e.g., `feature/add-language-switch`  
+   - Use fix branches for bug fixes:  
+     `fix/<issue-description>`  
+     e.g., `fix/header-alignment`
+   - Use refactor branches for restructuring without new features:  
+     `refactor/<context>`
+
+2. **Commits**
+   - Follow **Conventional Commit** format:
+     ```
+     feat: add new project filter
+     fix: resolve layout issue on mobile
+     refactor: simplify project card component
+     docs: update README with deploy instructions
+     ```
+   - Each commit must represent a **single, logical change**.
+   - Use **imperative tone** in commit messages (e.g., “add” not “added”).
+
+3. **Pull Requests**
+   - PR titles should mirror the commit message style.
+   - Include a short summary describing:
+     - What was changed
+     - Why it was changed
+     - How it was tested
+   - Avoid merging directly into `main` without review or testing.
+
+4. **Merging**
+   - Prefer **Squash & Merge** to keep a clean linear history.
+   - Ensure PRs pass ESLint and build checks before merge.
+
+5. **Versioning**
+   - Use **semantic versioning** (e.g., `v1.2.0`).
+   - Update changelog or release notes after each deployment.
+
+6. **Commit Quality for AI Agents**
+   - AI-generated commits should:
+     - Contain clear and descriptive messages.
+     - Avoid meaningless messages like “update files” or “fix stuff”.
+     - Be reviewed manually before merging.
+
+---
+
+> ✅ *Goal:* Maintain a clear, auditable Git history that reflects the professional quality and structure of the project.
+
+
 ## 🔒 Security & Privacy
 
 - Do not include sensitive personal data.  
