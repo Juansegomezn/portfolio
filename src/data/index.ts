@@ -4,4 +4,4 @@
  */
 
 export type { Project, Education, Certification, Skill, SocialLink, Experience } from './types'
-export { experiences, skills, socialLinks } from './portfolio-data'
+export { experiences, skills, socialLinks, education, certifications } from './portfolio-data'

@@ -3,4 +3,4 @@
  * Maintains clean architecture by centralizing hook imports
  */
 
-export { useExperience, useSkills, useSocialLinks } from './usePortfolioData'
+export { useExperience, useSkills, useSocialLinks, useEducation, useCertifications } from './usePortfolioData'

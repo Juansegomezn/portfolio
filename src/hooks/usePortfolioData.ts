@@ -1,9 +1,11 @@
 import { useCallback } from 'react'
-import type { Experience, Skill, SocialLink } from '../data/types'
+import type { Experience, Skill, SocialLink, Education, Certification } from '../data/types'
 import {
   experiences as experiencesData,
   skills as skillsData,
   socialLinks as socialLinksData,
+  education as educationData,
+  certifications as certificationsData,
 } from '../data/portfolio-data'
 
 /**
@@ -65,5 +67,27 @@ export const useSocialLinks = () => {
   return {
     all: socialLinksData,
     byPlatform: getLinkByPlatform,
+  }
+}
+
+/**
+ * Hook para obtener datos de educación
+ * Proporciona acceso a información educativa
+ */
+export const useEducation = () => {
+  return {
+    all: educationData,
+    total: educationData.length,
+  }
+}
+
+/**
+ * Hook para obtener datos de certificaciones
+ * Proporciona acceso a certificaciones profesionales
+ */
+export const useCertifications = () => {
+  return {
+    all: certificationsData,
+    total: certificationsData.length,
   }
 }

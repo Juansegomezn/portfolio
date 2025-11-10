@@ -1,4 +1,4 @@
-import type { Experience, Skill, SocialLink } from './types'
+import type { Experience, Skill, SocialLink, Education, Certification } from './types'
 
 export const experiences: Experience[] = [
   {
@@ -117,5 +117,59 @@ export const socialLinks: SocialLink[] = [
     url: 'mailto:jsga008@gmail.com',
     icon: 'mail',
     label: 'Send Email',
+  },
+]
+
+export const education: Education[] = [
+  {
+    id: '1',
+    institution: 'SENA - CEGAFE',
+    program: 'Technologist in Software Analysis and Development',
+    startDate: '2022',
+    endDate: '2024',
+    description:
+      'Focus on software design, development, evaluation, and quality control following industry standards.',
+    focus: 'Software Engineering & Clean Code',
+  },
+  {
+    id: '2',
+    institution: 'Platzi',
+    program: 'Self-Paced Online Learning',
+    startDate: '2021',
+    endDate: 'Present',
+    description: 'Continuous professional development through various technical courses and certifications.',
+  },
+]
+
+export const certifications: Certification[] = [
+  {
+    id: '1',
+    title: 'Frontend Development with React',
+    issuer: 'Platzi',
+    date: '2023',
+  },
+  {
+    id: '2',
+    title: 'JavaScript Fundamentals',
+    issuer: 'Platzi',
+    date: '2022',
+  },
+  {
+    id: '3',
+    title: 'Agile + Scrum Foundations',
+    issuer: 'Platzi',
+    date: '2023',
+  },
+  {
+    id: '4',
+    title: 'Productivity for Developers',
+    issuer: 'Platzi',
+    date: '2023',
+  },
+  {
+    id: '5',
+    title: 'LinkedIn Profile Optimization',
+    issuer: 'Platzi',
+    date: '2024',
   },
 ]

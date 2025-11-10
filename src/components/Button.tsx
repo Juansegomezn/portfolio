@@ -16,21 +16,21 @@ const Button: FC<ButtonProps> = ({
   children,
   ...props
 }) => {
-  const baseStyles = 'font-medium rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const baseStyles = 'font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary-800 focus:ring-primary-500'
 
   const variantStyles = {
-    primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
-    secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 focus:ring-gray-500',
-    outline: 'border border-gray-300 text-gray-900 hover:bg-gray-50 dark:border-gray-600 dark:text-white dark:hover:bg-gray-900 focus:ring-gray-500',
+    primary: 'bg-gradient-blue text-white hover:shadow-lg hover:shadow-primary-600/50 disabled:opacity-50',
+    secondary: 'bg-secondary-700 text-gray-100 hover:bg-secondary-600 border border-secondary-600 disabled:opacity-50',
+    outline: 'border border-primary-600 text-primary-400 hover:bg-primary-900/20 hover:border-primary-500 disabled:opacity-50',
   }
 
   const sizeStyles = {
-    sm: 'px-3 py-1.5 text-sm',
+    sm: 'px-4 py-2 text-sm',
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
   }
 
-  const disabledStyles = disabled || isLoading ? 'opacity-50 cursor-not-allowed' : ''
+  const disabledStyles = disabled || isLoading ? 'cursor-not-allowed opacity-60' : ''
 
   return (
     <button
