@@ -14,12 +14,13 @@ const Button: FC<ButtonProps> = ({
   disabled,
   className = '',
   children,
+  style,
   ...props
 }) => {
   const baseStyles = 'font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-secondary-800 focus:ring-primary-500'
 
   const variantStyles = {
-    primary: 'bg-gradient-blue text-white hover:shadow-lg hover:shadow-primary-600/50 disabled:opacity-50',
+    primary: 'text-white hover:shadow-lg hover:shadow-primary-600/50 disabled:opacity-50',
     secondary: 'bg-secondary-700 text-gray-100 hover:bg-secondary-600 border border-secondary-600 disabled:opacity-50',
     outline: 'border border-primary-600 text-primary-400 hover:bg-primary-900/20 hover:border-primary-500 disabled:opacity-50',
   }
@@ -32,10 +33,18 @@ const Button: FC<ButtonProps> = ({
 
   const disabledStyles = disabled || isLoading ? 'cursor-not-allowed opacity-60' : ''
 
+  const primaryStyle = variant === 'primary' ? {
+    background: 'linear-gradient(135deg, #3d3dff 0%, #2d35b5 100%)',
+  } : {}
+
   return (
     <button
       disabled={disabled || isLoading}
       className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${disabledStyles} ${className}`}
+      style={{
+        ...primaryStyle,
+        ...style,
+      }}
       aria-busy={isLoading}
       {...props}
     >

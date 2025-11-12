@@ -1,60 +1,39 @@
 import type { FC, PropsWithChildren } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
+import Navigation from './Navigation'
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
-  const { t } = useTranslation()
-  const location = useLocation()
-
-  const isActive = (path: string) => location.pathname === path
-
-  const navItems = [
-    { path: '/', label: t('common.home') },
-    { path: '/projects', label: t('common.projects') },
-    { path: '/education', label: 'Education' },
-    { path: '/contact', label: t('common.contact') },
-  ]
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    element?.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
-    <div className="min-h-screen bg-gradient-dark text-white flex flex-col">
-      {/* Header */}
+    <div 
+      className="min-h-screen text-white flex flex-col"
+      style={{
+        background: 'linear-gradient(135deg, #202b37ff 0%, #1f1f1f 100%)',
+      }}
+    >
+      <Navigation />
+
       <header className="bg-secondary-800 border-b border-primary-900 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-blue rounded-lg flex items-center justify-center font-bold text-lg">
-                JS
-              </div>
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
+            >
               <div>
                 <h1 className="text-xl font-bold text-white">
-                  Juan Sebastián
+                  Juan Gomez
                 </h1>
-                <p className="text-xs text-primary-400">Web UI Developer</p>
+                <p className="text-xs text-primary-400">Software Developer</p>
               </div>
-            </div>
+            </button>
+            
             <LanguageSwitcher />
           </div>
-
-          {/* Navigation */}
-          <nav className="flex justify-center gap-8 border-t border-secondary-700 pt-4">
-            {navItems.map(({ path, label }) => (
-              <Link
-                key={path}
-                to={path}
-                className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
-                  isActive(path)
-                    ? 'text-primary-400'
-                    : 'text-gray-300 hover:text-primary-300'
-                }`}
-              >
-                {label}
-                {isActive(path) && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-blue rounded-t-full" />
-                )}
-              </Link>
-            ))}
-          </nav>
         </div>
       </header>
 
@@ -76,16 +55,21 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
             <div>
               <h3 className="text-sm font-semibold text-primary-400 mb-4">QUICK LINKS</h3>
               <ul className="space-y-2 text-sm">
-                {navItems.map(({ path, label }) => (
-                  <li key={path}>
-                    <Link
-                      to={path}
-                      className="text-gray-400 hover:text-primary-400 transition-colors"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
+                <li>
+                  <a href="#hero" className="text-gray-400 hover:text-primary-400 transition-colors">Home</a>
+                </li>
+                <li>
+                  <a href="#projects" className="text-gray-400 hover:text-primary-400 transition-colors">Projects</a>
+                </li>
+                <li>
+                  <a href="#achievements" className="text-gray-400 hover:text-primary-400 transition-colors">Achievements</a>
+                </li>
+                <li>
+                  <a href="#education" className="text-gray-400 hover:text-primary-400 transition-colors">Education</a>
+                </li>
+                <li>
+                  <a href="#contact" className="text-gray-400 hover:text-primary-400 transition-colors">Contact</a>
+                </li>
               </ul>
             </div>
             <div>
@@ -97,9 +81,9 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
               </p>
             </div>
           </div>
-          <div className="border-t border-secondary-700 pt-8">
-            <p className="text-center text-gray-500 text-sm">
-              {t('common.copyright')}
+          <div className="border-t border-secondary-700 pt-8 text-center">
+            <p className="text-gray-500 text-sm">
+              © 2025 Juan Sebastian Gomez Ayala. All rights reserved.
             </p>
           </div>
         </div>

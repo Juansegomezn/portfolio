@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import type { Experience, Skill, SocialLink, Education, Certification } from '../data/types'
+import type { Experience, Skill, SocialLink } from '../data/types'
 import {
   experiences as experiencesData,
   skills as skillsData,
@@ -8,10 +8,7 @@ import {
   certifications as certificationsData,
 } from '../data/portfolio-data'
 
-/**
- * Hook para obtener datos de experiencia laboral
- * Proporciona acceso a la experiencia filtrada y actual
- */
+
 export const useExperience = (): { all: Experience[]; current: Experience | undefined; total: number } => {
   const getCurrentExperience = useCallback((): Experience | undefined => {
     return experiencesData.find((exp) => exp.current)
@@ -31,10 +28,6 @@ export const useExperience = (): { all: Experience[]; current: Experience | unde
   }
 }
 
-/**
- * Hook para obtener datos de habilidades
- * Proporciona acceso a habilidades por categoría
- */
 export const useSkills = () => {
   const getSkillsByCategory = useCallback((category: string): string[] => {
     const skill = skillsData.find((s) => s.category === category)
@@ -52,10 +45,6 @@ export const useSkills = () => {
   }
 }
 
-/**
- * Hook para obtener enlaces de redes sociales
- * Proporciona acceso a perfiles sociales
- */
 export const useSocialLinks = () => {
   const getLinkByPlatform = useCallback(
     (platform: string): SocialLink | undefined => {
@@ -70,10 +59,6 @@ export const useSocialLinks = () => {
   }
 }
 
-/**
- * Hook para obtener datos de educación
- * Proporciona acceso a información educativa
- */
 export const useEducation = () => {
   return {
     all: educationData,
@@ -81,10 +66,6 @@ export const useEducation = () => {
   }
 }
 
-/**
- * Hook para obtener datos de certificaciones
- * Proporciona acceso a certificaciones profesionales
- */
 export const useCertifications = () => {
   return {
     all: certificationsData,

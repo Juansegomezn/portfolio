@@ -12,18 +12,18 @@ export const experiences: Experience[] = [
       'Developed scalable and pixel-perfect UI components using React, TypeScript, and MUI. Integrated RESTful APIs with clean, modular code following ESLint and SonarQube standards.',
     highlights: [
       'Led UI development for ChatGPT wrapper project (Landing Page, Dashboard, Settings)',
-      'Delivered internal tech talk on SOLID Principles and AI Tips',
+      'Delivered internal tech talk: "Code that Lasts: SOLID Principles and AI Tips" (Oct 2025)',
       'Maintained high code quality standards with SonarQube',
     ],
     technologies: [
       'React',
       'TypeScript',
       'MUI',
-      'API Integration',
+      'GitLab',
       'Jest',
       'Testing Library',
-      'ESLint',
       'SonarQube',
+      'ESLint',
     ],
   },
   {
@@ -37,10 +37,10 @@ export const experiences: Experience[] = [
       'Built a contact manager app and contributed to internal tools. Designed and deployed Dashboard AppScript + Looker Studio for centralized analytics.',
     highlights: [
       'Developed React Contact List with Redux and SCSS',
-      'Contributed to Glober-Market internal tool',
+      'Contributed to Glober-Market internal tool for process optimization',
       'Created analytics dashboard with AppScript and Looker Studio',
     ],
-    technologies: ['React', 'Redux', 'SCSS', 'Jest', 'MUI', 'AppScript', 'Git'],
+    technologies: ['React', 'Redux', 'SCSS', 'Jest', 'MUI', 'AppScript', 'Git', 'GitHub'],
   },
   {
     id: '3',
@@ -50,11 +50,11 @@ export const experiences: Experience[] = [
     endDate: '2023-11',
     current: false,
     description:
-      'Contributed to a research-based educational platform using React and Bootstrap. Developed interactive UI components and improved accessibility.',
+      'Contributed to a research-based educational platform using React and Bootstrap. Developed interactive UI components and improved accessibility with React Router.',
     highlights: [
       'Built interactive UI components with React Router',
-      'Improved accessibility standards',
-      'Collaborated with academic teams',
+      'Improved accessibility standards across platform',
+      'Collaborated closely with academic teams, fostering communication and adaptability',
     ],
     technologies: ['React', 'Bootstrap', 'Reactstrap', 'React Icons', 'React Router'],
   },

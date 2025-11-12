@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Card, Button } from '../components'
 import { useSocialLinks } from '../hooks'
 
-const Contact: FC = () => {
+const ContactSection: FC = () => {
   const { t } = useTranslation()
   const { all: socialLinks } = useSocialLinks()
 
@@ -14,10 +14,13 @@ const Contact: FC = () => {
   }
 
   return (
-    <section className="py-16 px-4">
+    <section 
+      id="contact"
+      className="py-20 px-4"
+    >
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-primary-300 to-primary-400 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-300 to-primary-400 bg-clip-text text-transparent mb-4">
             {t('contact.title')}
           </h2>
           <p className="text-gray-400 text-lg">
@@ -60,7 +63,7 @@ const Contact: FC = () => {
         </div>
 
         {/* Email Alternative */}
-        <div className="bg-gradient-to-r from-primary-900/30 to-secondary-900 border border-primary-800 rounded-lg p-8 text-center">
+        <div className="bg-secondary-800 border border-primary-800 rounded-lg p-8 text-center">
           <h3 className="text-xl font-bold text-white mb-3">
             Prefer email?
           </h3>
@@ -69,7 +72,10 @@ const Contact: FC = () => {
           </p>
           <a
             href="mailto:jsga008@gmail.com"
-            className="inline-block px-6 py-3 bg-gradient-blue text-white rounded-lg hover:shadow-lg hover:shadow-primary-600/50 transition-all duration-300 font-medium"
+            style={{
+              background: 'linear-gradient(135deg, #3d3dff 0%, #2d35b5 100%)',
+            }}
+            className="inline-block px-6 py-3 text-white rounded-lg hover:shadow-lg hover:shadow-primary-600/50 transition-all duration-300 font-medium"
           >
             jsga008@gmail.com
           </a>
@@ -79,4 +85,4 @@ const Contact: FC = () => {
   )
 }
 
-export default Contact
+export default ContactSection
