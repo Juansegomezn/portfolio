@@ -5,7 +5,7 @@ interface FooterLink {
   href: string
 }
 
-const Footer: FC = () => {
+const FooterSection: FC = () => {
   const quickLinks: FooterLink[] = [
     { label: 'Home', href: '#hero' },
     { label: 'Projects', href: '#projects' },
@@ -101,4 +101,4 @@ const Footer: FC = () => {
   )
 }
 
-export default Footer
+export default FooterSection

@@ -1,23 +1,24 @@
 import type { FC } from 'react'
 import Layout from './components/Layout'
-import { About, Footer } from './components'
 import { 
   ProjectsSection, 
   AchievementSection, 
   EducationSection, 
-  ContactSection 
+  ContactSection, 
+  AboutSection,
+  FooterSection
 } from './sections'
 import './index.css'
 
 const App: FC = () => {
   return (
     <Layout>
-      <About />
+      <AboutSection />
       <ProjectsSection />
       <AchievementSection />
       <EducationSection />
       <ContactSection />
-      <Footer />
+      <FooterSection />
     </Layout>
   )
 }

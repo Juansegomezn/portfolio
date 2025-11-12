@@ -10,12 +10,12 @@ interface NavLink {
 
 const Navigation: FC = () => {
   const { t } = useTranslation()
-  const [activeSection, setActiveSection] = useState('hero')
+  const [activeSection, setActiveSection] = useState('about')
 
   // Detect active section while scrolling
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'projects', 'achievements', 'education', 'contact']
+      const sections = ['about', 'projects', 'achievements', 'education', 'contact']
       
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -34,7 +34,7 @@ const Navigation: FC = () => {
   }, [])
 
   const navLinks: NavLink[] = [
-    { id: 'hero', label: t('common.home'), href: '#hero' },
+    { id: 'about', label: t('common.home'), href: '#about' },
     { id: 'projects', label: t('common.projects'), href: '#projects' },
     { id: 'achievements', label: 'Achievements', href: '#achievements' },
     { id: 'education', label: 'Education', href: '#education' },

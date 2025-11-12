@@ -146,7 +146,7 @@ export const certifications: Certification[] = [
     id: '1',
     title: 'Frontend Development with React',
     issuer: 'Platzi',
-    date: '2023',
+    date: '2025',
   },
   {
     id: '2',

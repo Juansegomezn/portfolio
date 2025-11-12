@@ -20,7 +20,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-6">
             <button
-              onClick={() => scrollToSection('hero')}
+              onClick={() => scrollToSection('about')}
               className="flex items-center gap-3 cursor-pointer hover:opacity-80 transition-opacity"
             >
               <div 

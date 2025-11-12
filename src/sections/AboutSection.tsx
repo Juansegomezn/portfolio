@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 
-const About: FC = () => {
+const AboutSection: FC = () => {
   return (
     <section
       id="about"
@@ -59,4 +59,4 @@ const About: FC = () => {
   )
 }
 
-export default About
+export default AboutSection
