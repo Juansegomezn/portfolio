@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import Layout from './components/Layout'
+import { About, Footer } from './components'
 import { 
-  HeroSection, 
   ProjectsSection, 
   AchievementSection, 
   EducationSection, 
@@ -12,10 +12,12 @@ import './index.css'
 const App: FC = () => {
   return (
     <Layout>
+      <About />
       <ProjectsSection />
       <AchievementSection />
       <EducationSection />
       <ContactSection />
+      <Footer />
     </Layout>
   )
 }
