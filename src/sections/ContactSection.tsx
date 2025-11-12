@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Card, Button } from '../components'
+import Card from '../components/Card'
+import Button from '../components/Button'
 import { useSocialLinks } from '../hooks'
 
 const ContactSection: FC = () => {
@@ -60,25 +61,6 @@ const ContactSection: FC = () => {
               </Card>
             </a>
           ))}
-        </div>
-
-        {/* Email Alternative */}
-        <div className="bg-secondary-800 border border-primary-800 rounded-lg p-8 text-center">
-          <h3 className="text-xl font-bold text-white mb-3">
-            Prefer email?
-          </h3>
-          <p className="text-gray-400 mb-4">
-            Send me a direct message at
-          </p>
-          <a
-            href="mailto:jsga008@gmail.com"
-            style={{
-              background: 'linear-gradient(135deg, #3d3dff 0%, #2d35b5 100%)',
-            }}
-            className="inline-block px-6 py-3 text-white rounded-lg hover:shadow-lg hover:shadow-primary-600/50 transition-all duration-300 font-medium"
-          >
-            jsga008@gmail.com
-          </a>
         </div>
       </div>
     </section>

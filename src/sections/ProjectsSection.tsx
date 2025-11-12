@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import { useExperience } from '../hooks'
-import { Card, Badge } from '../components'
+import Card from '../components/Card'
+import Badge from '../components/Badge'
 
 const ProjectsSection: FC = () => {
   const { all: experiences } = useExperience()

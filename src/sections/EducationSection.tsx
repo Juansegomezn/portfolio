@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 import { useEducation, useCertifications, useSkills } from '../hooks'
-import { Card, Badge } from '../components'
+import Card from '../components/Card'
+import Badge from '../components/Badge'
 
 const EducationSection: FC = () => {
   const { all: educationList } = useEducation()
