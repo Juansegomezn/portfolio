@@ -49,10 +49,10 @@ const Header: FC = () => {
           : 'relative'
       } h-[70px] flex items-center justify-between transition-all duration-300 w-full`}
       style={{
-        paddingLeft: '32px',
-        paddingRight: '32px',
+        padding: '0 5%',
         boxSizing: 'border-box',
-        backgroundColor: isScrolled ? 'rgba(24, 25, 60, 0.85)' : 'transparent',
+        borderBottom: 'none',
+        backgroundColor: isScrolled ? 'rgba(17, 20, 27, 0.85)' : 'transparent',
         backdropFilter: isScrolled ? 'blur(2px)' : 'none',
       }}
     >

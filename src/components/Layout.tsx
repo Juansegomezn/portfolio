@@ -7,17 +7,21 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
     <div 
       className="min-h-screen flex flex-col"
       style={{
-        background: 'linear-gradient(135deg, #0d0d0d 0%, #1f1f1f 100%)',
+        background: '#0f171dff',
+        color: '#cdcdcdff',
       }}
     >
-      {/* Navigation - Fixed Right Side */}
       <Navigation />
 
-      {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main 
+        className="flex-grow"
+        style={{
+          padding: '0 10%',
+        }}
+      >
         {children}
       </main>
     </div>

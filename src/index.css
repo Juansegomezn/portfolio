@@ -5,7 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: rgb(16, 29, 53);
+    background-color: #0d0d2dff;
   }
   body {
     margin: 0;
