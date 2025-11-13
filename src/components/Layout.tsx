@@ -1,6 +1,5 @@
 import type { FC, PropsWithChildren } from 'react'
 import Header from './Header'
-import Navigation from './Navigation'
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -9,9 +8,9 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
       style={{
         background: '#0f171dff',
         color: '#cdcdcdff',
+        fontFamily: 'Inter, sans-serif',
       }}
     >
-      <Navigation />
 
       <Header />
 

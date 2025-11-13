@@ -9,9 +9,13 @@ import {
   FooterSection
 } from './sections'
 import './index.css'
+import Navigation from './components/Navigation'
 
 const App: FC = () => {
   return (
+    <>
+    <Navigation />
+    
     <Layout>
       <AboutSection />
       <ProjectsSection />
@@ -20,6 +24,7 @@ const App: FC = () => {
       <ContactSection />
       <FooterSection />
     </Layout>
+    </>
   )
 }
 
