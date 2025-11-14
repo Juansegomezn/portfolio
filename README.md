@@ -61,7 +61,7 @@ src/
 ├── data/ # JSON data for projects, education, etc.
 ├── i18n/ # Translation setup
 ├── hooks/ # Custom React hooks
-├── pages/ # Main views (Home, Projects, etc.)
+├── pages/ or sections/ # Main views (About, Projects, etc.)
 ├── styles/ # Tailwind or global styles
 └── main.tsx
 
