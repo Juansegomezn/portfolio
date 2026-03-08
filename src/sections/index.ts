@@ -1,6 +1,0 @@
-export { default as ProjectsSection } from './ProjectsSection'
-export { default as AchievementSection } from './AchievementSection'
-export { default as EducationSection } from './EducationSection'
-export { default as ContactSection } from './ContactSection'
-export { default as AboutSection } from './AboutSection'
-export { default as FooterSection } from './FooterSection'
