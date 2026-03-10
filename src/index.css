@@ -37,3 +37,34 @@
     letter-spacing: -0.02em;
   }
 }
+
+@layer components{
+  .glass{
+    background-color: color-mix(in srgb, color var(--color-surface) 50%, color transparent);
+    backdrop-filter: blur(16px);
+    border: 1px solid color-mix(in srgb, color var(--color-border) 50%, color transparent);
+  }
+  .glass{
+    background-color: color-mix(in srgb, color var(--color-surface) 80%, color transparent);
+    backdrop-filter: blur(24px);
+    border: 1px solid color-mix(in srgb, color var(--color-border) 60%, color transparent);
+  }
+}
+
+@layer utilities{
+  @keyframes fade-in {
+    from{
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  .animate-fade-in{
+    animation: fade-in 0.5s ease-in-out;
+  }
+}
