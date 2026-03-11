@@ -1,5 +1,5 @@
 import { Button } from '@/components/Button'
-import { ArrowRight, ChevronDown, Github, Linkedin } from 'lucide-react'
+import { ArrowRight, ChevronDown, Download, Github, Linkedin } from 'lucide-react'
 import { AnimatedBorderButton } from '@/components/AnimatedBorderButton'
 
 const skills = [
@@ -81,7 +81,13 @@ export const Hero = () => {
               <Button size="lg">
                 Contact Me <ArrowRight size={18}/>
               </Button>
-              <AnimatedBorderButton />
+              <AnimatedBorderButton 
+                href="/cv-juan-gomez.pdf" 
+                download="CV_Juan_Gomez.pdf"
+              >
+                <Download size={18}/>
+                Download CV
+              </AnimatedBorderButton>
             </div>
 
             <div className='flex items-center gap-8 animate-fade-in animation-delay-400'>
