@@ -90,7 +90,13 @@ export const Hero = () => {
                 {icon: Github, href: 'https://github.com/Juansegomezn'},
                 {icon: Linkedin, href: 'https://www.linkedin.com/in/juanse-gomez-118b8b1b8/'},
               ].map((link, index) => (
-                <a href={link.href} key={index} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300">
+                <a
+                    href={link.href}
+                    key={index}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                  >
                   <link.icon size={20}/>
                 </a>
               ))}
