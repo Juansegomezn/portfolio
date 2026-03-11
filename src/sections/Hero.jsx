@@ -50,7 +50,7 @@ export const Hero = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+      <div className="container mx-auto px-6 pt-24 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="animate-fade-in">
@@ -70,10 +70,10 @@ export const Hero = () => {
                 modern technologies.
                 </span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed animate-fade-in animation-delay-200">
-                Crafting seamless <span className="text-foreground">digital products</span> by merging 
-                fullstack expertise with <span className="text-foreground">AI-driven workflows</span>. 
-                From database architecture to polished frontend, I build systems that perform.
+              <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed animate-fade-in animation-delay-200 mt-6">
+                I'm <span className="text-foreground">Juan Gomez</span>, a software engineer focused on 
+                <span className="text-foreground"> React, TypeScript, and Fullstack</span>. 
+                I build scalable products by merging technical expertise with AI-driven workflows.
               </p>
             </div>
 
