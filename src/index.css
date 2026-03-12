@@ -35,10 +35,6 @@
   button{
     cursor: pointer;
   }
-  .font-mono{
-    font-family: "JetBrains Mono", monospace;
-    letter-spacing: -0.02em;
-  }
 }
 
 @layer components{
