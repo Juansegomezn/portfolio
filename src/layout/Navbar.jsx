@@ -6,7 +6,6 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
 ]
 
 export const Navbar = () => {
@@ -25,8 +24,8 @@ export const Navbar = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 transition-all duration-300 ${isScrolled ? 'glass-strong py-3' : 'bg-transparent py-5'} z-99`}>
       <nav className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold tracking-tight hover:text-primary">
-          JG<span className="text-primary">.</span>
+        <a href="#" className="text-xl font-bold tracking-tight hover:text-primary ">
+          Juan Gomez<span className="text-primary">·</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -41,7 +40,9 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
+          <a href="#contact">
+            <Button size="sm">Contact Me</Button>
+          </a>
         </div>
 
         {/* Mobile Navigation */}
@@ -63,7 +64,9 @@ export const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button>
+            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <Button size="lg">Contact Me</Button>
+            </a>
           </div>
         </div>
       )}
