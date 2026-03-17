@@ -1,8 +1,8 @@
 import { Button } from '@/components/Button'
 import { Languages, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react';
-import { useLanguage } from '@/context/languageContext';
-import { translations } from '@/data/translations';
+import { useLanguage } from '@/context/LanguageContext.jsx';
+import { translations } from '@/data/translations.js';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

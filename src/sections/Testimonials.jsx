@@ -1,7 +1,7 @@
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
-import { useLanguage } from "@/context/languageContext";
-import { translations } from "@/data/translations";
+import { useLanguage } from "@/context/LanguageContext.jsx";
+import { translations } from "@/data/translations.js";
 
 const testimonialMetadata = [
   {

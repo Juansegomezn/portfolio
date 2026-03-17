@@ -2,8 +2,8 @@ import { AlertCircle, CheckCircle, Mail, MapPin, Phone, Send, Loader } from "luc
 import { Button } from '@/components/Button'
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { useLanguage } from "@/context/languageContext";
-import { translations } from "@/data/translations";
+import { useLanguage } from "@/context/LanguageContext.jsx";
+import { translations } from "@/data/translations.js";
 
 export const Contact = () => {
   const { language } = useLanguage();

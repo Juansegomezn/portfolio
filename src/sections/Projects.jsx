@@ -1,7 +1,7 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from '@/components/AnimatedBorderButton';
-import { useLanguage } from "@/context/languageContext";
-import { translations } from "@/data/translations";
+import { useLanguage } from "@/context/LanguageContext.jsx";
+import { translations } from "@/data/translations.js";
 
 const projectMetadata = [
   {

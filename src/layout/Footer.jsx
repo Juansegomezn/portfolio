@@ -1,6 +1,6 @@
 import { Github, Linkedin } from "lucide-react";
-import { useLanguage } from "@/context/languageContext";
-import { translations } from "@/data/translations";
+import { useLanguage } from "@/context/LanguageContext.jsx";
+import { translations } from "@/data/translations.js";
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com/Juansegomezn', label: 'Github' },

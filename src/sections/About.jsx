@@ -1,6 +1,6 @@
 import { Code2, Lightbulb, Rocket, User, Users } from "lucide-react";
-import { useLanguage } from "@/context/languageContext";
-import { translations } from "@/data/translations";
+import { useLanguage } from "@/context/LanguageContext.jsx";
+import { translations } from "@/data/translations.js";
 
 const highlightIcons = [Code2, Rocket, Users, Lightbulb];
 
