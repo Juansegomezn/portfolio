@@ -17,6 +17,7 @@ This portfolio demonstrates advanced front-end architecture with contemporary de
 ### Visual Design & User Experience
 - 🎨 **Glassmorphism UI** - Modern frosted glass aesthetic with advanced CSS backdrop filters
 - 📱 **Fully Responsive** - Optimized layouts for mobile, tablet, and desktop devices
+- 🌐 **Internationalization (i18n)** - Native multi-language support (EN/ES) with dynamic state management and SEO synchronization
 - ⚡ **Fluid Animations** - Smooth transitions and interactive micro-interactions
 - 🎯 **Performance Optimized** - Lazy loading, code splitting, and efficient bundle management
 
@@ -30,6 +31,8 @@ This portfolio demonstrates advanced front-end architecture with contemporary de
 
 ### Technical Excellence
 - ⚙️ **Modern Tooling** - Vite 7 for lightning-fast development and HMR
+- 🌍 **Scalable i18n Architecture** - Centralized translation dictionary with React Context API for zero-prop-drilling language switching
+- 🔍 **SEO Optimization** - Dynamic HTML `lang` attribute synchronization for improved accessibility and search engine indexing
 - 🎨 **Advanced Styling** - Tailwind CSS 4 with utility-first architecture
 - 🔧 **Code Quality** - ESLint configuration for consistent code standards
 - 📦 **Efficient Icons** - Lucide React for lightweight, scalable SVG icons
@@ -73,6 +76,12 @@ portfolio/
 │   │   ├── AnimatedBorderButton.jsx    # Custom button with animation
 │   │   └── Button.jsx                  # Standard button component
 │   │
+│   ├── context/              # State Management
+│   │   └── LanguageContext.jsx # i18n Logic & HTML lang sync
+│   │
+│   ├── data/                 # Application Data
+│   │   └── translations.js   # Dictionary for EN/ES content
+│   │
 │   ├── layout/               # Page Layout Components
 │   │   ├── Navbar.jsx        # Navigation header
 │   │   └── Footer.jsx        # Footer section
@@ -96,6 +105,16 @@ portfolio/
 ├── vite.config.js            # Vite configuration
 ├── eslint.config.js          # ESLint ruleset
 ```
+---
+
+## 🌐 Internationalization Strategy
+
+The application implements a custom i18n solution designed for performance and maintainability:
+
+- **Context-Driven:** Uses React Context API to provide language state globally without unnecessary re-renders.
+- **Data Decoupling:** All UI strings are externalized into a centralized dictionary, allowing for easy addition of new languages.
+- **SEO & Accessibility:** Automatically updates the `document.documentElement.lang` attribute on language toggle to ensure correct screen reader behavior and search engine crawling.
+- **Persistence-Ready:** Built with a structure that easily adapts to `localStorage` for saving user language preferences.
 
 ---
 
