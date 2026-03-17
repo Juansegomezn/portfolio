@@ -1,37 +1,25 @@
 import { Button } from '@/components/Button'
 import { ArrowRight, ChevronDown, Download, Github, Linkedin } from 'lucide-react'
 import { AnimatedBorderButton } from '@/components/AnimatedBorderButton'
+import { useLanguage } from '../context/languageContext'
+import { translations } from '../data/translations'
 
 const skills = [
-  "React",
-  "Next.js",
-  "JavaScript",
-  "TypeScript",
-  "Node.js",
-  "Redux",
-  "Express",
-  "SQL",
-  "PHP",
-  "Tailwind CSS",
-  "Material UI",
-  "Bootstrap",
-  "Sass",
-  "Jest",
-  "Testing Library",
-  "Figma",
-  "Git",
-  "GitLab",
-  "Docker",
-  "AI Tools",
-  "REST APIs",
+  "React", "Next.js", "JavaScript", "TypeScript", "Node.js", "Redux", "Express", 
+  "SQL", "PHP", "Tailwind CSS", "Material UI", "Bootstrap", "Sass", "Jest", 
+  "Testing Library", "Figma", "Git", "GitLab", "Docker", "AI Tools", "REST APIs"
 ];
 
 export const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background & Particles */}
       <div className="absolute inset-0">
         <img src="/hero-bg.jpg" alt="Hero Background" className="w-full h-full object-cover opacity-30"/>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
+        <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"/>
       </div>
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -56,89 +44,87 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>
-                Web Developer | Full Stack - Frontend 
+                {t.role}
               </span>
             </div>
 
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Developing <span className="text-primary glow-text">smarter</span> 
+                {t.titleStart} <span className="text-primary glow-text">{t.titleGlow}</span> 
                 <br />
-                websites with
+                {t.titleMid}
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                modern technologies.
+                  {t.titleEnd}
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed animate-fade-in animation-delay-200 mt-6">
-                I'm <span className="text-foreground">Juan Gomez</span>, a software engineer focused on 
-                <span className="text-foreground"> React, TypeScript, and Fullstack</span>. 
-                I build scalable products by merging technical expertise with AI-driven workflows.
+                {t.description}
               </p>
             </div>
 
             <div className='flex flex-wrap gap-4 animate-fade-in animation-delay-300'>
               <a href="#projects">
                 <Button size="lg">
-                  View Projects <ArrowRight size={18}/>
+                  {t.viewProjects} <ArrowRight size={18}/>
                 </Button>
               </a>
               <AnimatedBorderButton 
-                href="/cv-juan-gomez.pdf" 
-                download="CV_Juan_Gomez.pdf"
+                href={t.cvFile} 
+                download={t.cvName}
               >
                 <Download size={18}/>
-                Download CV
+                {t.downloadCV}
               </AnimatedBorderButton>
             </div>
 
             <div className='flex items-center gap-8 animate-fade-in animation-delay-400'>
-              <span className='text-sm text-muted-foreground'>Follow me: </span>
+              <span className='text-sm text-muted-foreground'>{t.followMe}</span>
               {[
                 {icon: Github, href: 'https://github.com/Juansegomezn'},
                 {icon: Linkedin, href: 'https://www.linkedin.com/in/juanse-gomez-118b8b1b8/'},
               ].map((link, index) => (
                 <a
-                    href={link.href}
-                    key={index}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
-                  >
+                  href={link.href}
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
                   <link.icon size={20}/>
                 </a>
               ))}
             </div>
           </div>
 
+          {/* Profile Image Section */}
           <div className='relative animate-fade-in animation-delay-300'>
             <div className='relative max-w-md mx-auto'>
-              <div 
-                className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"
-              />
+              <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse" />
               <div className='relative glass rounded-2xl p-2 glow-border'>
-                <img src="/profile.png" alt="Juan Gomez" className='w-full aspect-[4/5] object-cover rounded-2xl'/>
+                <img src="/profile.png" alt="Juan Gomez" className='w-full aspect-4/5 object-cover rounded-2xl'/>
 
                 <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                   <div className="flex items-center gap-3">
                     <div className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"/>
                     <div className="relative inline-flex rounded-full h-3 w-3 bg-primary"/>
-                    <span className="text-sm font-medium">Available for work</span>
+                    <span className="text-sm font-medium">{t.status}</span>
                   </div>
                 </div>
 
                 <div className='absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500'>
-                  <div className='text-2xl font-bold text-primary'>2+</div>
-                  <div className='text-xs text-muted-foreground'>Years Exp.</div>
+                  <div className='text-2xl font-bold text-primary'>{t.expYears}</div>
+                  <div className='text-xs text-muted-foreground'>{t.expText}</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Tech Marquee */}
         <div className="mt-20 animate-fade-in animation-delay-600">
           <p className="text-sm text-muted-foreground mb-6 text-center">
-            Technologies I work with
+            {t.techText}
           </p>
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
@@ -155,10 +141,7 @@ export const Hero = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
-        <a 
-          href="#about" 
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
+        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
           <span className="text-xs uppercase tracking-wider">Scroll</span>
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </a>

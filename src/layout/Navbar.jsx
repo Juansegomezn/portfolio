@@ -1,16 +1,20 @@
 import { Button } from '@/components/Button'
-import { Menu, X } from 'lucide-react'
+import { Languages, Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react';
-
-const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
-]
+import { useLanguage } from '@/context/languageContext';
+import { translations } from '@/data/translations';
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, toggleLanguage } = useLanguage();
+  const t = translations[language].navbar;
+
+  const navLinks = [
+    { name: t.about, href: "#about" },
+    { name: t.experience, href: "#experience" },
+    { name: t.projects, href: "#projects" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,27 +34,35 @@ export const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-1">
-          <div className="glass rounded-full px-2 py-1 flex items-center gap-3">
+          <div className="glass rounded-full ml-8 px-2 py-1 flex items-center gap-3">
             {navLinks.map((link, index) => (
-              <a href={link.href} key={index} className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface">
+              <a href={link.href} key={index} className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface transition-colors">
                 {link.name}
               </a>
             ))}
           </div>
         </div>
-
-        <div className="hidden md:block">
+          
+        <div className="hidden md:flex items-center gap-4">
+          <button 
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-full glass hover:bg-primary/10 transition-all text-xs font-bold border border-white/5"
+          >
+            <Languages size={14} className="text-primary" />
+            {language === "en" ? "Cambiar a Español" : "Switch to English"}
+          </button>
           <a href="#contact">
-            <Button size="sm">Contact Me</Button>
+            <Button size="sm">{t.contact}</Button>
           </a>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Toggle */}
         <button className='md:hidden p-2 text-foreground' onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
           {isMobileMenuOpen ? <X size={24}/> : <Menu size={24}/>}
         </button>
       </nav>
       
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden glass-strong animate-fade-in">
           <div className="container mx-auto p-6 flex flex-col gap-3">
@@ -64,9 +76,18 @@ export const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button size="lg">Contact Me</Button>
-            </a>
+            <div className="flex items-center justify-between pt-2">
+              <button 
+                onClick={() => { toggleLanguage(); setIsMobileMenuOpen(false); }}
+                className="flex items-center gap-2 px-4 py-2 rounded-xl glass text-sm font-medium"
+              >
+                <Languages size={18} />
+                {language === "en" ? "ES" : "EN"}
+              </button>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button size="lg">{t.contact}</Button>
+              </a>
+            </div>
           </div>
         </div>
       )}
