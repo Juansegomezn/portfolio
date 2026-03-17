@@ -6,7 +6,7 @@ const projects = [
     title: "Umbral Circle",
     description: "Umbral Circle: A full-stack social network built with React, Node.js, and MySQL. Featuring secure JWT authentication, real-time server state with TanStack Query, and a customized SCSS theme system.",
     image: "/projects/umbral-circle.jpg",
-    tags: ["React", "NodeJS", "MySQL", "Express", "JWT", "TanStack Query", "REact Router", "SCSS", "Axios", "Material UI"],
+    tags: ["React", "NodeJS", "MySQL", "Express", "JWT", "TanStack Query", "React Router", "SCSS", "Axios", "Material UI"],
     link: "https://umbral-circle-client.vercel.app/",
     github: "https://github.com/Juansegomezn/umbral-circle/tree/main",
   },
