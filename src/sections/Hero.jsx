@@ -7,7 +7,8 @@ import { translations } from '@/data/translations.js'
 const skills = [
   "React", "Next.js", "JavaScript", "TypeScript", "Node.js", "Redux", "Express", 
   "SQL", "PHP", "Tailwind CSS", "Material UI", "Bootstrap", "Sass", "Jest", 
-  "Testing Library", "Figma", "Git", "GitLab", "Docker", "AI Tools", "REST APIs"
+  "Testing Library", "Figma", "Git", "GitLab", "Docker", "AI Tools", "REST APIs",
+  "MySQL", "AppScript", "Looker Studio", "Laravel", "SCSS", "HTML", "CSS"
 ];
 
 export const Hero = () => {
