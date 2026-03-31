@@ -5,6 +5,12 @@ import { translations } from "@/data/translations.js";
 
 const projectMetadata = [
   {
+    image: "/projects/creataceous-protocol.png",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel AI SDK", "Google Gemini AI", "Pollinations AI", "Framer Motion", "Lucide Icons", "Biome"],
+    link: "https://cretaceous-protocol.vercel.app/",
+    github: "https://github.com/Juansegomezn/cretaceous-protocol",
+  },
+  {
     image: "/projects/umbral-circle.jpg",
     tags: ["React", "NodeJS", "MySQL", "Express", "JWT", "TanStack Query", "React Router", "SCSS", "Axios", "Material UI"],
     link: "https://umbral-circle-client.vercel.app/",

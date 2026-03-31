@@ -72,6 +72,10 @@ export const translations = {
       viewAll: "View All Projects",
       items: [
         {
+          title: "Cretaceous Protocol",
+          description: "Next.js 16 Survival Terminal. Real-time AI narrative engine (Gemini) + Automated Pixel Art (Pollinations/Flux) + Tailwind 4 Phosphor Aesthetic.",
+        },
+        {
           title: "Umbral Circle",
           description: "Umbral Circle: A full-stack social network built with React, Node.js, and MySQL. Featuring secure JWT authentication, real-time server state with TanStack Query, and a customized SCSS theme system.",
         },
@@ -208,6 +212,10 @@ export const translations = {
       description: "Selección de proyectos y contribuciones profesionales, con enfoque en arquitectura, rendimiento y experiencia de usuario.",
       viewAll: "Ver todos los proyectos",
       items: [
+        {
+          title: "Cretaceous Protocol",
+          description: "Terminal de Supervivencia Narrativa en Next.js 16. Motor de rol dinámico potenciado por IA (Gemini) + Generación automática de Pixel Art (Pollinations/Flux). Estética de terminal de fósforo retro con Tailwind 4.",
+        },
         {
           title: "Umbral Circle",
           description: "Umbral Circle: Una red social full-stack construida con React, Node.js y MySQL. Incluye autenticación segura JWT, estado de servidor en tiempo real con TanStack Query y un sistema de temas SCSS personalizado.",
