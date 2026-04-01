@@ -44,7 +44,6 @@ export const translations = {
       ]
     },
     skills: {
-      badge: "Expertise",
       title: "Technical",
       titleAccent: "Stack",
       categories: {
@@ -194,7 +193,6 @@ export const translations = {
       ]
     },
     skills: {
-      badge: "Experiencia",
       title: "Stack",
       titleAccent: "Técnico",
       categories: {
