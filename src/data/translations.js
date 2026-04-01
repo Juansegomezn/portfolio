@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    navbar: { about: "About", experience: "Experience", projects: "Projects", contact: "Contact Me" },
+    navbar: { about: "About", skills: "Skills", experience: "Experience", projects: "Projects", contact: "Contact Me" },
     hero: {
       role: "Web Developer | Full Stack - Frontend",
       titleStart: "Developing",
@@ -43,6 +43,16 @@ export const translations = {
           description: "Leveraging AI tools and agent-based workflows to drive project success and efficiency."
         }
       ]
+    },
+    skills: {
+      badge: "Expertise",
+      title: "Technical",
+      titleAccent: "Stack",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend & DB",
+        tools: "Tools & DevOps"
+      }
     },
     experience: {
       badge: "Career Journey",
@@ -141,7 +151,7 @@ export const translations = {
     }
   },
   es: {
-    navbar: { about: "Sobre mí", experience: "Experiencia", projects: "Proyectos", contact: "Contacto" },
+    navbar: { about: "Sobre mí", skills: "Habilidades", experience: "Experiencia", projects: "Proyectos", contact: "Contacto" },
     hero: {
       role: "Desarrollador Web | Full Stack - Frontend",
       titleStart: "Creación",
@@ -184,6 +194,16 @@ export const translations = {
           description: "Implementando IA y flujos basados en agentes para el éxito y eficiencia de proyectos."
         }
       ]
+    },
+    skills: {
+      badge: "Experiencia",
+      title: "Stack",
+      titleAccent: "Técnico",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend y BD",
+        tools: "Herramientas y DevOps"
+      }
     },
     experience: {
       badge: "Trayectoria Profesional",
