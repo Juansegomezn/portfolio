@@ -6,7 +6,7 @@ import { translations } from "@/data/translations.js";
 const projectMetadata = [
   {
     image: "/projects/creataceous-protocol.png",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel AI SDK", "Google Gemini AI", "Groq AI (Llama)", "Pollinations AI", "Framer Motion", "Lucide Icons", "Biome"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel AI SDK", "Google Gemini AI", "Groq AI (Llama)", "Pollinations AI", "Framer Motion", "Lucide Icons", "Biome", "Prompts Engineering", "Vercel"],
     link: "https://cretaceous-protocol.vercel.app/",
     github: "https://github.com/Juansegomezn/cretaceous-protocol",
   },
