@@ -15,8 +15,7 @@ export const translations = {
       followMe: "Follow me:",
       status: "Available for work",
       expYears: "2+",
-      expText: "Years Exp.",
-      techText: "Technologies I work with"
+      expText: "Years Exp."
     },    
     about: {
       badge: "About Me",
@@ -166,8 +165,7 @@ export const translations = {
       followMe: "Sígueme:",
       status: "Disponible para trabajar",
       expYears: "2+",
-      expText: "Años Exp.",
-      techText: "Tecnologías con las que trabajo"
+      expText: "Años Exp."
     },
     about: {
       badge: "Sobre Mí",
