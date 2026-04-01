@@ -73,7 +73,7 @@ export const translations = {
       items: [
         {
           title: "Cretaceous Protocol",
-          description: "Next.js 16 Survival Terminal. Real-time AI narrative engine (Gemini) + Automated Pixel Art (Pollinations/Flux) + Tailwind 4 Phosphor Aesthetic.",
+          description: "Next.js 16 Survival Terminal. Real-time AI narrative engine (Groq/Llama) + Automated Pixel Art (Pollinations/Flux) + Tailwind 4 Phosphor Aesthetic.",
         },
         {
           title: "Umbral Circle",
@@ -214,7 +214,7 @@ export const translations = {
       items: [
         {
           title: "Cretaceous Protocol",
-          description: "Terminal de Supervivencia Narrativa en Next.js 16. Motor de rol dinámico potenciado por IA (Gemini) + Generación automática de Pixel Art (Pollinations/Flux). Estética de terminal de fósforo retro con Tailwind 4.",
+          description: "Terminal de Supervivencia Narrativa en Next.js 16. Motor de rol dinámico potenciado por IA (Groq/Llama) + Generación automática de Pixel Art (Pollinations/Flux). Estética de terminal de fósforo retro con Tailwind 4.",
         },
         {
           title: "Umbral Circle",
