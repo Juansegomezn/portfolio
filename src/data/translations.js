@@ -1,6 +1,6 @@
 export const translations = {
   en: {
-    navbar: { about: "About", experience: "Experience", projects: "Projects", contact: "Contact Me" },
+    navbar: { about: "About", skills: "Skills", experience: "Experience", projects: "Projects", contact: "Contact Me" },
     hero: {
       role: "Web Developer | Full Stack - Frontend",
       titleStart: "Developing",
@@ -15,8 +15,7 @@ export const translations = {
       followMe: "Follow me:",
       status: "Available for work",
       expYears: "2+",
-      expText: "Years Exp.",
-      techText: "Technologies I work with"
+      expText: "Years Exp."
     },    
     about: {
       badge: "About Me",
@@ -43,6 +42,15 @@ export const translations = {
           description: "Leveraging AI tools and agent-based workflows to drive project success and efficiency."
         }
       ]
+    },
+    skills: {
+      title: "Technical",
+      titleAccent: "Stack",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend & DB",
+        tools: "Tools & DevOps"
+      }
     },
     experience: {
       badge: "Career Journey",
@@ -141,7 +149,7 @@ export const translations = {
     }
   },
   es: {
-    navbar: { about: "Sobre mí", experience: "Experiencia", projects: "Proyectos", contact: "Contacto" },
+    navbar: { about: "Sobre mí", skills: "Habilidades", experience: "Experiencia", projects: "Proyectos", contact: "Contacto" },
     hero: {
       role: "Desarrollador Web | Full Stack - Frontend",
       titleStart: "Creación",
@@ -156,8 +164,7 @@ export const translations = {
       followMe: "Sígueme:",
       status: "Disponible para trabajar",
       expYears: "2+",
-      expText: "Años Exp.",
-      techText: "Tecnologías con las que trabajo"
+      expText: "Años Exp."
     },
     about: {
       badge: "Sobre Mí",
@@ -184,6 +191,15 @@ export const translations = {
           description: "Implementando IA y flujos basados en agentes para el éxito y eficiencia de proyectos."
         }
       ]
+    },
+    skills: {
+      title: "Stack",
+      titleAccent: "Técnico",
+      categories: {
+        frontend: "Frontend",
+        backend: "Backend y BD",
+        tools: "Herramientas y DevOps"
+      }
     },
     experience: {
       badge: "Trayectoria Profesional",

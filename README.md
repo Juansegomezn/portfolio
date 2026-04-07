@@ -18,7 +18,7 @@ This portfolio demonstrates advanced front-end architecture with contemporary de
 - 🎨 **Glassmorphism UI** - Modern frosted glass aesthetic with advanced CSS backdrop filters
 - 📱 **Fully Responsive** - Optimized layouts for mobile, tablet, and desktop devices
 - 🌐 **Internationalization (i18n)** - Native multi-language support (EN/ES) with dynamic state management and SEO synchronization
-- ⚡ **Fluid Animations** - Smooth transitions and interactive micro-interactions
+- ⚡ **Fluid Animations** - Smooth transitions powered by Framer Motion for interactive micro-interactions
 - 🎯 **Performance Optimized** - Lazy loading, code splitting, and efficient bundle management
 
 ### Professional Showcase Components
@@ -36,6 +36,7 @@ This portfolio demonstrates advanced front-end architecture with contemporary de
 - 🎨 **Advanced Styling** - Tailwind CSS 4 with utility-first architecture
 - 🔧 **Code Quality** - ESLint configuration for consistent code standards
 - 📦 **Efficient Icons** - Lucide React for lightweight, scalable SVG icons
+- 💎 **Visual Identity** - Integration of official Simple Icons with sophisticated grayscale-to-color hover effects
 - 🔐 **Environment Safety** - Secure credential management via environment variables
 
 ---
@@ -52,7 +53,8 @@ This portfolio demonstrates advanced front-end architecture with contemporary de
 - **Design Pattern:** Utility-first responsive design with mobile-first approach
 
 ### UI & Iconography
-- **Icon Library:** Lucide React - Lightweight, performant SVG icons
+- **Icon Library:** Lucide React, Simple Icons & performant SVG icons
+- **Animations:** Framer Motion - Industry standard for production-ready React animations
 - **Components:** Modular, reusable React components with composition patterns
 
 ### Email & Integrations
@@ -89,6 +91,7 @@ portfolio/
 │   ├── sections/             # Full-page Section Components
 │   │   ├── Hero.jsx          # Hero introduction section
 │   │   ├── About.jsx         # Professional background
+│   │   ├── Skills.jsx        # Technical stack with categorization
 │   │   ├── Experience.jsx    # Career timeline
 │   │   ├── Projects.jsx      # Portfolio showcase
 │   │   ├── Testimonials.jsx  # Social proof / testimonials
@@ -203,10 +206,11 @@ VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
 
 1. **Hero Section** - Visitor lands on compelling introduction
 2. **About Section** - Learn professional background and skills
-3. **Experience Timeline** - Review career progression
-4. **Projects Portfolio** - Explore featured work and case studies
-5. **Testimonials** - Read feedback from collaborators
-6. **Contact Form** - Send message via EmailJS integration
+3. **Skills Showcase** - Explore technical stack by categories (Frontend, Backend, Tools)
+4. **Experience Timeline** - Review career progression
+5. **Projects Portfolio** - Explore featured work and case studies
+6. **Testimonials** - Read feedback from collaborators
+7. **Contact Form** - Send message via EmailJS integration
 
 ---
 

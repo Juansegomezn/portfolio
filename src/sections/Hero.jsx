@@ -4,13 +4,6 @@ import { AnimatedBorderButton } from '@/components/AnimatedBorderButton'
 import { useLanguage } from '@/context/LanguageContext.jsx'
 import { translations } from '@/data/translations.js'
 
-const skills = [
-  "React", "Next.js", "JavaScript", "TypeScript", "Node.js", "Redux", "Express", 
-  "SQL", "PHP", "Tailwind CSS", "Material UI", "Bootstrap", "Sass", "Jest", 
-  "Testing Library", "Figma", "Git", "GitLab", "Docker", "AI Tools", "REST APIs",
-  "MySQL", "AppScript", "Looker Studio", "Laravel", "SCSS", "HTML", "CSS"
-];
-
 export const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
@@ -118,24 +111,6 @@ export const Hero = () => {
                   <div className='text-xs text-muted-foreground'>{t.expText}</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Tech Marquee */}
-        <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-sm text-muted-foreground mb-6 text-center">
-            {t.techText}
-          </p>
-          <div className="relative overflow-hidden">
-            <div className="flex animate-marquee">
-              {[...skills, ...skills].map((skill, index) => (
-                <div key={index} className='flex-shrink-0 px-8 py-4'>
-                  <span className='text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors'>
-                    {skill}
-                  </span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
