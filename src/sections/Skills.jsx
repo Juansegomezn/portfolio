@@ -34,7 +34,7 @@ export const Skills = () => {
     {
       id: "backend",
       label: t.categories.backend,
-      items: ["Node.js", "Express", "PHP", "Laravel", "MySQL", "REST APIs", "AppScript"]
+      items: ["Node.js", "Express", "PHP", "Laravel", "MySQL", "PostgreSQL", "REST APIs", "AppScript"]
     },
     {
       id: "tools",

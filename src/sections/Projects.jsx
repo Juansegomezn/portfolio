@@ -12,7 +12,7 @@ const projectMetadata = [
   },
   {
     image: "/projects/umbral-circle.jpg",
-    tags: ["React", "NodeJS", "MySQL", "Express", "JWT", "TanStack Query", "React Router", "SCSS", "Axios", "Material UI"],
+    tags: ["React", "NodeJS", "MySQL", "PostgreSQL", "Express", "JWT", "TanStack Query", "React Router", "SCSS", "Axios", "Material UI"],
     link: "https://umbral-circle-client.vercel.app/",
     github: "https://github.com/Juansegomezn/umbral-circle/tree/main",
   },
