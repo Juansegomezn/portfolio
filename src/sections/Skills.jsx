@@ -39,7 +39,7 @@ export const Skills = () => {
     {
       id: "tools",
       label: t.categories.tools,
-      items: ["Git", "GitHub", "Docker", "Jest", "Redux", "AI Tools", "Looker Studio"]
+      items: ["Git", "GitHub", "GitLab", "Docker", "Jest", "Redux", "AI Tools", "Looker Studio"]
     }
   ];
 
