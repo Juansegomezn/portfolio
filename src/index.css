@@ -141,7 +141,7 @@
       stroke-dashoffset: 400;
     }
     100% {
-      stroke-dashoffset: -550;
+      stroke-dashoffset: -800; 
     }
   }
   .group:hover .animated-border-path {
