@@ -142,9 +142,9 @@ export const translations = {
       rights: "All rights reserved.",
       nav: {
         about: "About",
+        skills: "Skills",
         projects: "Projects",
-        experience: "Experience",
-        contact: "Contact"
+        experience: "Experience"
       }
     }
   },
@@ -291,9 +291,9 @@ export const translations = {
       rights: "Todos los derechos reservados.",
       nav: {
         about: "Sobre mí",
+        skills: "Habilidades",
         projects: "Proyectos",
-        experience: "Trayectoria",
-        contact: "Contacto"
+        experience: "Experiencia"
       }
     }
   }

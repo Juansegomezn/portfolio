@@ -14,6 +14,7 @@ export const Footer = () => {
 
   const footerLinks = [
     { href: "#about", label: t.nav.about },
+    { href: "#skills", label: t.nav.skills },
     { href: "#experience", label: t.nav.experience },
     { href: "#projects", label: t.nav.projects },
     { href: "#contact", label: t.nav.contact },
@@ -27,7 +28,7 @@ export const Footer = () => {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight hover:text-primary transition-colors">
-              JG<span className="text-primary">·</span>
+              Juan Gomez<span className="text-primary">·</span>
             </a>
             <p className="text-xs text-muted-foreground mt-2 font-medium">
               © {currentYear} Juan Gomez. {t.rights}
