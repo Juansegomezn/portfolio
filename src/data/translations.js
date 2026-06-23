@@ -90,6 +90,10 @@ export const translations = {
         {
           title: "VeloWords Translate",
           description: "Modern Google Translate-inspired web app using on-device AI translation via the experimental Chromium Translator API.",
+        },
+        {
+          title: "Space Explorer",
+          description: "Full-Stack Cosmic Data Platform (Monorepo). Built with React 19 and .NET 10 Web API following Clean Architecture principles. Features official NASA API integration, OpenAI-powered telemetric image comparison, multi-stage Docker containerization, and a PostgreSQL database.",
         }
       ]
     },
@@ -239,6 +243,10 @@ export const translations = {
         {
           title: "VeloWords Translate",
           description: "Aplicación web moderna inspirada en Google Translate que utiliza traducción por IA local a través de la API experimental Chromium Translator.",
+        },
+        {
+          title: "Space Explorer",
+          description: "Plataforma cósmica Full-Stack (Monorepo). Frontend en React 19 y Backend en .NET 10 Web API con Clean Architecture. Integración con la API de la NASA y análisis comparativo de imágenes mediante IA (OpenAI). Contenedores Docker multi-etapa y base de datos PostgreSQL.",
         }
       ]
     },

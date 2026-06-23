@@ -22,6 +22,12 @@ const projectMetadata = [
     link: "https://velowords-translate.vercel.app/",
     github: "https://github.com/Juansegomezn/velowords-translate/tree/main",
   },
+  {
+    image: "/projects/space-explorer.png",
+    tags: ["React 19", "TypeScript", ".NET 10", "C#", "PostgreSQL", "Docker", "Docker Compose", "Clean Architecture", "JWT", "Axios", "OpenAI API", "NASA API", "Entity Framework", "Lucide Icons", "Vite", "Vitest / xUnit"],
+    link: "https://github.com/Juansegomezn/challenge",
+    github: "https://github.com/Juansegomezn/challenge",
+  }
 ];
 
 export const Projects = () => {
