@@ -16,6 +16,9 @@ const getIconUrl = (name) => {
     "AI Tools": "googlegemini",
     "Looker Studio": "looker",
     "SQL": "sqlite",
+    ".NET (ASP.NET Core)": "dotnet",
+    "Entity Framework Core": "framework",
+    "Unit Testing (.NET)": "dotnet",
   };
   const slug = map[name] || name.toLowerCase().replace(/\s+/g, '').replace('.js', 'js');
   return `https://cdn.simpleicons.org/${slug}`;
@@ -35,12 +38,12 @@ export const Skills = () => {
     {
       id: "backend",
       label: t.categories.backend,
-      items: ["Node.js", "Express", "PHP", "Laravel", "SQL", "MySQL", "PostgreSQL", "REST APIs", "AppScript"]
+      items: ["Node.js", "Express", "PHP", "Laravel", "SQL", "MySQL", "PostgreSQL", "REST APIs", "AppScript", "C#", ".NET (ASP.NET Core)", "Entity Framework Core"]
     },
     {
       id: "tools",
       label: t.categories.tools,
-      items: ["Git", "GitHub", "GitLab", "Docker", "Jest", "Redux", "AI Tools", "Looker Studio", "Supabase"]
+      items: ["Git", "GitHub", "GitLab", "Docker", "Jest", "Redux", "Unit Testing (.NET)", "AI Tools", "Looker Studio", "Supabase"]
     }
   ];
 
